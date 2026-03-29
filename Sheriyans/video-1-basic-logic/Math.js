@@ -7,3 +7,10 @@ console.log(Math.sqrt(25)); //5
 console.log(Math.abs(15));
 console.log(Math.max(99, 20 , 2));
 console.log(Math.min(1,2,3));
+
+
+
+let a = 89.8662
+console.log(a.toFixed(2)); //2 digit is allowed after decimal but it convert int into string 
+console.log(typeof a.toFixed(2));
+
