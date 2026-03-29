@@ -1,0 +1,15 @@
+Video 1 => Basic Logic In JavaScript 
+=>Variable , Operator , Operation on Operator
+
+Q Sum Of Two Integer
+> Relation Between Integer And String
+- Type Coercion
+Q Sum And Message
+Q Accept And Print The Answer
+Q Swap Two Variable via three Method
+
+-Operation And There Questions
+-Arithmetic -,+,*,/,%
+-Relation  < , <= , > , >=
+-logical && , || , !
+unary operator ++ , --
