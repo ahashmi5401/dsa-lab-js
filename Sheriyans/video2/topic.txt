@@ -1,0 +1,12 @@
+//TOPIC FOR VIDEO 2
+
+//Valid Voter
+//Shop Discount 
+//Electric   //almost same as shop discount logic
+//Pkr Denomination
+
+-> Ternary Operator 
+-> nested Ternary Operator
+
+Switch And One Case Handling Multiple Values
+-> switch case can't handle float value bcz of precision issues
