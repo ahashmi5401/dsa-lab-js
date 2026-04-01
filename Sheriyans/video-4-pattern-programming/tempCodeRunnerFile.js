@@ -1,0 +1,1 @@
+rightAngleTriangle += row + '\n'
