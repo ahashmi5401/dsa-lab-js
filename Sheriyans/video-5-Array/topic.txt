@@ -1,0 +1,3 @@
+**Array**
+Array is the linear Data Structure
+continous
