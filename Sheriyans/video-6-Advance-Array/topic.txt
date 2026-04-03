@@ -1,0 +1,19 @@
+Here is a condensed version for your **topic.txt** file:
+
+---
+
+### **Advanced Array & String Algorithms**
+
+* **Kadane’s Algorithm:** Maximum Subarray Sum ($O(n)$ time).
+* **Boyer-Moore Voting:** Finding the Majority Element ($O(1)$ space).
+* **Trapping Rain Water:** Using Two-Pointers to calculate trapped volume.
+* **Best Time to Buy/Sell Stock:** Single-pass profit optimization.
+* **Dutch National Flag (Sort Colors):** Sorting 0s, 1s, and 2s in one pass.
+* **Two-Pointer Techniques:**
+    * Merging sorted arrays.
+    * Removing duplicates in-place.
+    * Optimized array rotations (Reversal Algorithm).
+
+**Goal:** Master $O(n)$ time and $O(1)$ space complexity patterns.
+
+---
