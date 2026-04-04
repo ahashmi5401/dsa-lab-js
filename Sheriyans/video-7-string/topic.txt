@@ -1,0 +1,25 @@
+Bilkul short aur clear summary aapki `topic.txt` ke liye:
+
+---
+
+### **Strings (Video 7) - Short Notes**
+
+#### **1. Substring vs Slice**
+* **`slice(start, end)`**: Best hai. Negative index (piche se) allow karta hai.
+* **`substring(start, end)`**: Negative ko `0` Maan leta hai. Agar `start > end` ho toh swap kar deta hai.
+
+#### **2. Reverse String**
+* **Easy:** `str.split('').reverse().join('')` (Fast coding).
+* **Efficient:** **Two-Pointer** (Left aur Right swap).
+    * *Note:* String immutable hai, isliye pehle `split('')` karke array banana padta hai.
+
+
+#### **3. Frequency Array (Counting)**
+* `new Array(128).fill(0)` banao.
+* `str.charCodeAt(i)` ko **index** maano aur `+1` karte jao.
+* $O(n)$ time mein characters count ho jate hain.
+
+#### **4. Case Toggle Trick**
+* `char ^ 32` (Bitwise XOR).
+* Uppercase $\leftrightarrow$ Lowercase flip karne ka sabse fast tareeka.
+
