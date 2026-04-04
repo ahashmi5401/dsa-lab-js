@@ -1,6 +1,7 @@
+
 # 🛸 [ENGINEER-CORE // JS-LABS]
-> **DEVELOPER:** MUHAMMAD AYAN HASHMI
-> **STATUS:** ONLINE // OPTIMIZING_LOGIC
+> **DEVELOPER:** MUHAMMAD AYAN HASHMI  
+> **STATUS:** ONLINE // OPTIMIZING_LOGIC // [UPDATED_RESOURCES]
 
 ---
 
@@ -27,7 +28,14 @@ To keep the code professional, I follow these **3 Engineering Rules**:
 | :--- | :--- | :--- | :--- |
 | **Logic Engine** | LeetCode | Priority Registry System | `STABLE` |
 | **Data Flow** | HackerRank | Array Management | `VERIFIED` |
+| **Foundation** | [Launch School](https://launchschool.com/books/dsa) | DSA Mastery & Fundamentals | `LEARNING` |
 | **UI Logic** | Personal | React 19 State Tests | `ACTIVE` |
+
+---
+
+### 📡 [[ BASE_RESOURCES ]]
+> Accessing external intelligence nodes for DSA refinement:
+* **Primary Resource:** [Launch School Open Book (JS)](https://launchschool.com/books/javascript) — *Used for deep-dive mental models of JavaScript logic.*
 
 ---
 
@@ -45,3 +53,5 @@ To keep the code professional, I follow these **3 Engineering Rules**:
 
 ---
 > **SYSTEM_MSG:** "Coding is not just writing; it is engineering a solution."
+
+
