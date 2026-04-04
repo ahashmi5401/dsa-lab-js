@@ -9,20 +9,15 @@
 
 
 var reverseStr = function(s, k) {
-   // 1. String ko Array mein badlo (kyunki string change nahi hosakti)
+   // 1. string is immutable
     let arr = s.split("");
 
     // 2. Loop chalao aur har baar "2 * k" ka jump maaro
     for (let i = 0; i < arr.length; i += 2 * k) {
         let left = i;
-        let right = i + k - 1;
+        let right = Math.min(i + k - 1 , arr.length - 1);
 
-        // Agar string khatam ho rahi ho aur k characters na bache hon
-        if (right >= arr.length) {
-            right = arr.length - 1;
-        }
-
-        if(left < right){
+        while(left < right){
             let temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp
@@ -32,6 +27,5 @@ var reverseStr = function(s, k) {
     }
     let revByK = arr.join('')
     return revByK
-    
 };
-reverseStr("abcdefg" , 2)
+console.log(reverseStr("abcd" , 4));
