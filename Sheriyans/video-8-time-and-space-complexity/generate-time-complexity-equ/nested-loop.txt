@@ -1,0 +1,5 @@
+//if one loop inside another loop => Nested Loop run to n
+
+//time complexity => n * n => n^2 bcz in nested loop multiply
+
+=> 0(n^2)

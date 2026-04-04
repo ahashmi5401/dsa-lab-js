@@ -1,0 +1,11 @@
+//agr 2 loop => 1 loop nested or dusri uske parallel
+
+//nested ke andr 1 loop hai tou => n * n => n^2
+
+//2nd loop is not nested so time complexity is  => n 
+
+//both are parallel to each other => n^2 + n
+
+//is situation me choti wale ko ignre karek bcz negligible hai 
+
+//time complexity for this question is => O(n^2)

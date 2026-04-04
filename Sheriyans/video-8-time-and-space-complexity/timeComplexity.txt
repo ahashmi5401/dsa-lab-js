@@ -1,0 +1,80 @@
+## 🕒 Time Complexity 
+**Amount of time taken as the function of input size**
+*//n time loop chal raha hai jaise jaise apki n ki value abrhti jayegi calculation/operation bhi bharte jayege isi behaviour ko kehte hai time complexity*
+
+> **Simplified Breakdown:** Jab hum code likhte hain, hum dekhte hain ke agar data (n) double ho jaye, tou kya code ki speed bhi double slow hogi ya usse bhi zyada? Is relation ko Time Complexity kehte hain.
+
+- **Handling for large input (not use in small input)**
+
+- **Complexity Representation (Three Types)**
+  #hum use karen bigO bcz zada se zada kitne operation karne hai
+  => **BigO** #ye dekh upper bound, worst case 
+  => **Theta (θ)** #average case
+  => **Omega (Ω)** #lower bound / best case
+
+> **Simplified Breakdown:** Interviewer hamesha **Worst Case (BigO)** puchta hai kyunki humein ye pata hona chahiye ke hamara code maximum kitna time le sakta hai. It's like checking the "maximum delivery time" for a parcel.
+
+---
+
+## 📈 Type And Graph
+
+### 1. O(1) - Constant Time
+*#agr koi bhi task 1 hi operation mai hojaye tou usse kehte hain constant time complexity. Agr n ki exact value 10 given hai or 40 operation horai tou constant time complexity hai. n ki value agr dynamic ho tou nahi hai constant time complexity.*
+
+> **Simplified Breakdown:** Iska n se koi lena dena nahi. Chahe 1 item ho ya 1 lakh, time utna hi lagega. Example: Array se index ke zariye element nikalna (`arr[5]`).
+
+
+
+### 2. O(n) - Linear Time
+*#jisne usne boldia n ki value given nahi hai jitni ki value hgi utne operation honge. Example: linear search. Array mai target find worst case last me milega tou number of operation increase bcz of n.*
+
+> **Simplified Breakdown:** Jitna bada data, utna zyada time. Agar aap ek line mein khade 10 logon se naam puch rahe hain, tou 10 operation honge.
+
+### 3. O(n²) - Quadratic Time
+*#nested loop both are run n time tou is situtation mai hoga n^2. bcz nested loop me (n*n) hoga. Agr 3 loop hai nested ke andr 1 or loop so complexity n^3.*
+
+> **Simplified Breakdown:** Ye "Dangerous Zone" hai. Agar n = 100 hai, tou operations 10,000 ho jayenge! Hamesha koshish karein ke nested loops ko avoid karke Hash Maps use karein.
+
+
+
+### 4. O(2ⁿ) - Exponential Time
+*#for example n = 5. n ki value agr 5 hai tou or aapko operation 2^5 = 32 lagrahe hai tou ye exponantial time complexity hai.*
+
+> **Simplified Breakdown:** Ye tab hota hai jab aap recursive functions mein ek hi kaam baar baar karte hain (bin Memoization ke). Har step par kaam double ho jata hai.
+
+### 5. O(n!) - Factorial Time
+*#EXAMPLE n = 5. 5! = 120. srf ye value nikalne ke liye 120 operation laggye.*
+
+> **Simplified Breakdown:** Sabse slow! Ye tab hota hai jab hum saari possible combinations (permutations) nikalte hain.
+
+### 6. O(log n) - Logarithmic Time
+> **Simplified Breakdown:** Sabse best! Isme har step par hamara data "aadha" (half) ho jata hai. Example: **Binary Search**. Phone book mein naam dhundna iska best example hai.
+
+
+
+### 7. O(n log n) - Linearithmic Time
+*#aik loop chal rahi hai n tak or andar bhi 1 loop hai example (binary search). manlou n = 10, aapke i ki har 1 value ke liye apka binary search chl raha hai.*
+
+> **Simplified Breakdown:** Ye standard sorting algorithms (Merge Sort, Quick Sort) ki speed hoti hai. Ye $O(n^2)$ se bohot behtar hai.
+
+---
+
+### [ BIG O COMPLEXITY RANKING ]
+* (Excellent) **O(1)**
+* (Good) **O(log n)**
+* (Fair) **O(n)**
+* (Bad) **O(n log n)**
+* (Horrible) **O(n²)**
+* (Nightmare) **O(2ⁿ)**
+* (Disaster) **O(n!)**
+
+### [ THE "DECENT PACKAGE" RULES ]
+1. If you see a nested loop, ask: **"Can I use a Map/Set to make this O(n)?"**
+2. If the data is sorted, your first thought should be: **"Can I use Binary Search O(log n)?"**
+3. If you're calculating all combinations, you're in the "Nightmare" zone—**use Memoization!**
+
+---
+
+**Quick Tip for you:**
+Jab bhi aap `topic.txt` mein ye parhen, hamesha yaad rakhen ke **"Decent Package"** ke liye aapko code ko $O(n^2)$ se $O(n \log n)$ ya $O(n)$ par laana hota hai. 
+

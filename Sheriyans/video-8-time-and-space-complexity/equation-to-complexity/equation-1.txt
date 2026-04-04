@@ -1,0 +1,15 @@
+
+(3n^2)/2 + n.logn + n
+
+**step 1**
+sub se pehle choti value ko hata do n.logn or n ko
+
+**remaining**
+(3n^2)/2 
+
+
+**step 2**  
+constant = ko hata do 
+
+**remaining**
+so the time complexity for this equation is => n^2

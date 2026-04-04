@@ -1,0 +1,15 @@
+//maximum time complexity ki aik png hai jisme n ki value pe batya hai ke agr kitni ho tou konsa worst 
+//algorithm likh skte hai 
+
+//jitna bara data utna acha algorithm use karna hota hai 
+//is chart me sirf ye bataya he data agr itna tou tou worst se worst ye karkste hai acha se acha
+algorithm use kar
+
+        Value of n                           Worst konsa likh skte hain
+        n <= 10^8                              log(n) or O(1) 
+        n <= 10^6                               0(n) or n.logn
+        n <= 10^4                               O(n^2)
+        n <= 10^2                                O(n^3)
+        n <= 2000                                O(n^4)
+        n <= 100                                 2^n
+        n <= 50                                   n!

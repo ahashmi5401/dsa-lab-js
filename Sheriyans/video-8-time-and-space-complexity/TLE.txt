@@ -1,0 +1,82 @@
+TLE => Time limit Exceeded
+
+//jitna bara data utni achi algorithm hni chaiye wrna TLE ajayega agr unho ne kaha worst se worst 
+n^2 tak jao tou usse accha algorithm likh sakte ho magr bura nahi example n! nahi likh sakte agr
+usse bura likha tou TLE ajayega 
+
+In competitive programming and LeetCode, **TLE** stands for **Time Limit Exceeded**.
+
+It doesn't mean your code is wrong; it means your code is **too slow** for the given input size ($n$).
+
+### Why does TLE happen?
+Every online judge (like LeetCode or HackerRank) usually allows your code to run for about **1 second**. 
+* In 1 second, a standard computer can handle roughly **$10^8$ (10 Crore) operations**.
+
+### The "Decent Package" Secret: The $10^8$ Rule
+Before you even start coding, look at the **Constraints** of the problem. They tell you exactly which Big O you need to avoid TLE.
+
+| If $n$ is... | Max Complexity Allowed | Why? |
+| :--- | :--- | :--- |
+| **$n \le 10$** | $O(n!)$ or $O(2^n)$ | Very small data, recursion is okay. |
+| **$n \le 500$** | $O(n^3)$ | Triple nested loops might pass. |
+| **$n \le 5,000$** | $O(n^2)$ | **Nested loops** ($n \times n$) will pass. |
+| **$n \le 10^5$** | $O(n \log n)$ or $O(n)$ | **Nested loops will TLE!** Must use Sorting or Hash Maps. |
+| **$n \le 10^7$** | $O(n)$ | Only a single loop is allowed. |
+| **$n > 10^8$** | $O(\log n)$ or $O(1)$ | Must use Binary Search or Math formulas. |
+
+
+
+---
+
+### How to fix TLE in JavaScript?
+
+1.  **Check for Nested Loops:** If you have a loop inside a loop and $n = 10^5$, your operations become $10^{10}$. That is 100 times more than the limit!
+    * **Fix:** Use a `Map` or `Set` to look up values in $O(1)$ instead of searching again.
+2.  **Avoid String Concatenation in Loops:** In JS, `str += "a"` creates a new string every time ($O(n)$).
+    * **Fix:** Use an array and `.join('')` at the end.
+3.  **Recursion without Memoization:** If you are solving a problem like Fibonacci with recursion, you are doing the same work millions of times.
+    * **Fix:** Use an object to store previous results (**Memoization**).
+
+### Example of TLE vs. Optimized:
+**Problem:** Find if a pair exists that sums to `target`.
+* **TLE Version ($O(n^2)$):** Two nested loops checking every pair. (Fails if $n > 10,000$)
+* **Optimized Version ($O(n)$):** Use a `Set` to store numbers you've seen. (Passes even if $n = 1,000,000$)
+
+
+
+**Next time you get TLE, check the value of $n$ in the problem description.** Do you want me to show you a "TLE-prone" code and how to fix it using your `timeComplexity.txt` rules?
+
+
+
+
+===========================================================
+[ THE TLE SURVIVAL GUIDE - CONSTRAINT VS. COMPLEXITY ]
+===========================================================
+Online Judges (LeetCode/Codeforces) limit: ~10^8 operations/sec
+-----------------------------------------------------------
+
+| Constraints (N)   | Max Acceptable Time  | Mathematical Term       |
+| :---------------- | :------------------- | :---------------------- |
+| N <= 15           | O(N!)                | Factorial               |
+| N <= 30           | O(2^N)               | Exponential             |
+| N <= 100          | O(N^3)               | Cubic                   |
+| N <= 1,000        | O(N^2)               | Quadratic               |
+| N <= 10^5         | O(N log N)           | Linear * Logarithmic    |
+| N <= 10^6         | O(N log N)           | Linear * Logarithmic    |
+| N <= 10^7         | O(N)                 | Linear                  |
+| N <= 10^8         | O(N)                 | Linear                  |
+| N <= 10^9         | O(sqrt(N))           | Square Root             |
+| N > 10^9          | O(log N) or O(1)     | Logarithmic / Constant  |
+
+-----------------------------------------------------------
+[ THE "HIERARCHY" RULE ]
+If a problem accepts O(N^3), then any faster complexity 
+(like O(N^2) or O(N)) will ALSO pass easily. 
+
+[ WHY THIS MATTERS FOR "DECENT PACKAGE" ]
+- If N = 10^5, and you write a Nested Loop (O(N^2)), 
+  you do 10,000,000,000 operations. 
+- The computer only allows 100,000,000.
+- Result: TLE (FAILED).
+- FIX: Use a Hash Map or Sorting to get O(N log N).
+===========================================================

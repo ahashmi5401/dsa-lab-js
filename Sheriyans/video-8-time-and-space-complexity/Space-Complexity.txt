@@ -1,0 +1,29 @@
+//Agr aik loop me apne variable banaya loop n tak chal rahi hai tou wo var bhi n time ban raha hoga
+//magr phr space complexity O(1) constant  hi ayegi chahe aap 1000 variable kyuna bana lou 
+//kyunke bahar jakai loop ke wo mar jayega 
+
+
+===========================================================
+[ TIME & SPACE COMPLEXITY - SHORT NOTES ]
+===========================================================
+
+1. BIG O (Worst Case): Zada se zada kitne operation honge.
+2. O(1) [Constant]: N se koi farq nahi parta. (Example: arr[i])
+3. O(n) [Linear]: Jitna N, utne operation. (Example: Single Loop)
+4. O(n^2) [Quadratic]: Nested loops (Loop ke andar loop). Avoid this!
+5. O(log n): Data har step pe aadha ho raha hai. (Example: Binary Search)
+
+-----------------------------------------------------------
+[ THE MEMORY RULE (Space Complexity) ]
+-----------------------------------------------------------
+- Variable in Loop: O(1) space. (Kyunki variable loop ke bahar mar jata hai)
+- Array/Object in Loop: O(n) space. (Agar aap data store kar rahe hain)
+
+[ THE "DECENT PACKAGE" HACK ]
+- Time bachaane ke liye Memory (Space) sacrifice karo.
+- O(n^2) ko O(n) mein badalne ke liye Hash Map (Object) use karo.
+
+[ TLE PREDICTION ]
+- N = 10^5? Use O(n) or O(n log n). 
+- Nested loops = TLE (Failed).
+===========================================================

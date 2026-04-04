@@ -1,0 +1,6 @@
+//if three loop parallel to "n" the time complexity is 
+
+//ADD in parallel if the nested loop than multiply
+//n + n + n => 3n 
+//constant is negligible so =>n
+//time complexity = 0(n)

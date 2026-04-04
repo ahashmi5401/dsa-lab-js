@@ -1,0 +1,11 @@
+
+equation
+n.logn + n + O(1)
+
+**step 1**
+choti value ko hata den
+
+**remaining**
+n.logn
+
+so the time complexity for this equation is => n.logn
