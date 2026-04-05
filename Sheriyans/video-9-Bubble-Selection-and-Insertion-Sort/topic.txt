@@ -1,0 +1,60 @@
+============================================================
+🛸 [ENGINEER-CORE // ALGORITHM_LABS]
+TOPIC: Manual Sorting Techniques (Bubble vs Selection)
+============================================================
+
+------------------------------------------------------------
+1. 🫧 BUBBLE SORT (The "Bubbling" Logic)
+------------------------------------------------------------
+CONCEPT:
+Isme hum adjacent (padosi) elements ko compare karte hain. Agar 
+left wala element right wale se bada hai, toh unhein swap kar dete hain. 
+Is tarah sabse bada element "bubble" ki tarah end mein pahunch jata hai.
+
+EXAMPLE (Ascending): [5, 1, 4, 2]
+- Pass 1: [1, 5, 4, 2] -> [1, 4, 5, 2] -> [1, 4, 2, 5] (5 sorted!)
+- Pass 2: [1, 4, 2, 5] -> [1, 2, 4, 5] (4 sorted!)
+- Result: [1, 2, 4, 5]
+
+TIME COMPLEXITY: O(n^2) 
+SPACE COMPLEXITY: O(1)
+
+CODE SNIPPET:
+for(let i=0; i<n; i++) {
+    for(let j=0; j<n-i-1; j++) {
+        if(arr[j] > arr[j+1]) {
+            [arr[j], arr[j+1]] = [arr[j+1], arr[j]]; // Swap
+        }
+    }
+}
+
+------------------------------------------------------------
+2. 🎯 SELECTION SORT (The "Minimum Finder" Logic)
+------------------------------------------------------------
+CONCEPT:
+Aapne bilkul sahi kaha! Array ke do parts hote hain: Sorted aur Unsorted.
+Hum unsorted part mein se SABSE CHOTA (Minimum) element nikalte hain 
+aur usay sorted part ke aakhir mein "Swap" karke rakh dete hain.
+
+EXAMPLE: [13, 12, 1, 2]
+- Pass 1: Sabse chota '1' hai. Swap with index 0. -> [1, 12, 13, 2]
+- Pass 2: Unsorted [12, 13, 2] mein chota '2' hai. Swap with index 1. -> [1, 2, 13, 12]
+- Pass 3: Unsorted [13, 12] mein chota '12' hai. Swap with index 2. -> [1, 2, 12, 13]
+- Result: [1, 2, 12, 13]
+
+TIME COMPLEXITY: O(n^2)
+SPACE COMPLEXITY: O(1)
+
+CODE SNIPPET:
+for(let i=0; i<n-1; i++) {
+    let minIndex = i;
+    for(let j=i+1; j<n; j++) {
+        if(arr[j] < arr[minIndex]) minIndex = j;
+    }
+    if(minIndex !== i) swap(arr[i], arr[minIndex]);
+}
+
+============================================================
+SYSTEM_MSG: "Bubble pushes large to end; Selection pulls small to front."
+STATUS: VERIFIED_LOGIC // Karachi_Node_021
+============================================================
