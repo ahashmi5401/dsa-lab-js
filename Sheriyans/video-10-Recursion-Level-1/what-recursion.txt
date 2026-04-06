@@ -1,0 +1,49 @@
+//What I Recursion
+**Recursion** aik aisa programming concept hai jahan ek function **apne aap ko hi call karta hai**. Iska maqsad bari aur mushkil
+ problems ko chhote, ek jaise hisson mein tor kar hal karna hota hai.
+
+Ek recursive function ke do (2) main hissay hote hain:
+
+### **1. Base Case (Rukne ki jagah)**
+Ye wo condition hoti hai jo recursion ko khatam karti hai. Agar base case nahi hoga, toh function chalta rahega aur 
+**"Stack Overflow"** error aa jayega.
+
+### **2. Recursive Case (Dobara call karne wala hissa)**
+Ye wo part hai jahan function apne aap ko dobara call karta hai, lekin har baar input ko thora badal deta hai taake wo
+ base case ke kareeb pohnch sake.
+
+---
+
+### **Asaan Misaal: Factorial (!)**
+Agar humein $5!$ ($5 \times 4 \times 3 \times 2 \times 1$) nikalna ho, toh logic ye hogi:
+* $5! = 5 \times 4!$
+* $4! = 4 \times 3!$
+* ...aur ye tab tak chalega jab tak hum $1$ tak na pohnch jayein (Base Case).
+
+
+
+### **JavaScript Example:**
+```javascript
+function factorial(n) {
+  // 1. Base Case
+  if (n === 1) {
+    return 1;
+  }
+  // 2. Recursive Case
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // Output: 120
+```
+
+---
+
+### **Recursion Kaunsi Memory Use Karta Hai?**
+Jab bhi koi recursive call hoti hai, wo **Call Stack** mein ek naya frame banati hai. Jab tak base case hit nahi hota, ye frames stack mein jama hote rehte hain. Jaise hi base case hit hota hai, stack "unwind" hona shuru hota hai aur final result nikal aata hai.
+
+
+
+### **Summary**
+* **Kyun?** Taake complex logic (jaise Trees ya Graphs) ko saaf aur chhota likha ja sake.
+* **Khatra?** Agar base case galat ho toh memory full ho jati hai (Stack Overflow).
+* **Pechan?** Function ke andar usi function ka naam dobara likha hota hai.

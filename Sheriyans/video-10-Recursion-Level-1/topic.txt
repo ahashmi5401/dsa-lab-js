@@ -1,0 +1,14 @@
+
+### **Call Stack**
+Ye JavaScript ka wo hissa hai jo tracks rakhta hai ke kaunsa function abhi chal raha hai. Ye **LIFO** (Last In, First Out) pe kaam karta hai—yani jo function sabse aakhir mein aata hai, wahi sabse pehle khatam hota hai.
+* **Kya save karta hai:** Basic data (Numbers, Strings) aur function calls.
+
+### **Memory Heap**
+Ye memory ka wo bara area hai jahan data ko bina kisi khaas order ke rakha jata hai. Jab aap koi bari cheez banate hain jiski size fix nahi hoti, toh wo yahan store hoti hai.
+* **Kya save karta hai:** Objects, Arrays, aur Functions (Reference types).
+
+---
+
+### **Asaan Farq**
+* **Stack:** Choti aur fast memory (Mobile ki RAM ki tarah, foran kaam karne ke liye).
+* **Heap:** Bari storage (Hard drive ki tarah, jahan heavy objects pare hote hain).

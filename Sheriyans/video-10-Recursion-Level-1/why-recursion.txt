@@ -1,0 +1,35 @@
+//Why we Use recurssion #recursion se problem solve karte hai tou kehte hai "Recursive Way"
+Recursion ko hum tab use karte hain jab ek bara masla (problem) apne hi jaise chhote hisson mein taqseem (divide) ho sakta ho. 
+Iska main maqsad code ko **saaf (clean)** aur **chhota** banana hota hai.
+
+Niche iske mukh-taliq (various) fawaid diye gaye hain:
+
+### **1. Complex Problems ka Asaan Hal**
+Kuch maslay aise hote hain jinhein `for` ya `while` loop se likhna bohot mushkil hota hai, lekin recursion se wo chand lines mein
+ hal ho jate hain.
+* **Misaal:** Tree traversal (folders ke andar folders check karna) ya Graphs.
+
+### **2. Divide and Conquer**
+Bari problems ko tab tak tortay rehna jab tak wo itni chhoti na ho jayein ke unhein asani se hal kiya ja sake.
+* **Misaal:** Quick Sort aur Merge Sort (sorting algorithms).
+
+### **3. Mathematical Logic**
+Recursion mathematical formulas ko code mein convert karne ke liye behtareen hai.
+* **Misaal:** Factorials, Fibonacci series, aur combinations.
+
+### **4. Code Readability**
+Recursive code aksar zyada "declarative" hota hai. Iska matlab hai ke code dekh kar samajh aa jata hai ke *kya* ho raha hai, 
+bajaye iske ke logic loops mein ulajh jaye.
+
+---
+
+
+
+### **Zaroori Baat (The Catch)**
+Recursion use karte waqt do cheezon ka khayal rakhna lazmi hai:
+1.  **Base Case:** Wo point jahan recursion ruk jaye (warna "Stack Overflow" ho jayega).
+2.  **Memory:** Har recursive call **Call Stack** mein jagah leti hai, isliye agar bohot zyada calls hon tou performance slow 
+ho sakti hai.
+
+**Short Answer:** Hum recursion tab use karte hain jab logic ko "loop" se zyada "elegant" aur "readable" banana ho, khaas
+ taur par hierarchical data (trees/nodes) ke liye.
